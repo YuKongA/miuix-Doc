@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MiuixColor</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            miuix
+                    </a>
+            </div>
+            <div class="library-version">
+0.2.7            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":miuix:dokkaHtml/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="miuix::top.yukonga.miuix.kmp.theme/MiuixColor///PointingToDeclaration//1642444840">
+  <div class="breadcrumbs"><a href="../../../index.html">miuix</a><span class="delimiter">/</span><a href="../index.html">top.yukonga.miuix.kmp.theme</a><span class="delimiter">/</span><span class="current">MiuixColor</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Miuix</span><wbr></wbr><span><span>Color</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">class </span><a href="index.html">MiuixColor</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">primary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onPrimary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">primaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onPrimaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledPrimary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnPrimary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledPrimaryButton<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnPrimaryButton<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledPrimarySlider<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">primaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onPrimaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledSecondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnSecondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledSecondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnSecondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondaryContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">tertiaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onTertiaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">tertiaryContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">background<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onBackgroundVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceVariantDialog<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceVariantSummary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceVariantActions<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnSurface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">outline<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">dividerLine<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceContainerHigh<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainerHigh<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceContainerHighest<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainerHighest<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">windowDimming<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">The default color scheme for the Miuix components.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>primary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The primary color. Cases: Switch, Button, Slider.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span><span>Primary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on primary color. Cases: Switch, Button, Slider.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>primary</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The variant color of the primary color.Cases:Card</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on primary variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span><span>Primary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The disabled primary color of the switch.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Primary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the switch on disabled primary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Button</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The disabled primary color of the button.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Button</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the button on disabled primary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Slider</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The disabled primary color of the slider.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>primary</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The container color of the primary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on primary container color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>secondary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span><span>Secondary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>secondary</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The variant color of the secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on secondary variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span><span>Secondary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The disabled secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Secondary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on disabled secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The disabled secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on disabled secondary variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>secondary</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The container color of the secondary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on secondary container color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>secondary</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The variant color of the secondary container color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on secondary container variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>tertiary</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The container color of the tertiary color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Tertiary</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on tertiary container color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>tertiary</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The variant color of the tertiary container color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>background</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The background color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span><span>Background</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on background color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Background</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on background variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>surface</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span><span>Surface</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>surface</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The variant color of the surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Variant</span><wbr></wbr><span><span>Dialog</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the dialog summary on surface variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Variant</span><wbr></wbr><span><span>Summary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the summary on surface variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Variant</span><wbr></wbr><span><span>Actions</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the actions on surface variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Surface</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on disabled surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>outline</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The outline color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>divider</span><wbr></wbr><span><span>Line</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The divider line color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>surface</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The container color of the surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span><span>Container</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on surface container color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on surface container variant color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>High</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The container color of the surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>High</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on surface container high color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Highest</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The container color of the surface color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Highest</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the text on surface container highest color.</p></div></div></div></div><div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>window</span><wbr></wbr><span><span>Dimming</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The color of the window dimming. Cases: Dialog, Dropdown.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="650406086%2FConstructors%2F1642444840" anchor-label="MiuixColor" id="650406086%2FConstructors%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-miuix-color.html"><span>Miuix</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="650406086%2FConstructors%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">primary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onPrimary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">primaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onPrimaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledPrimary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnPrimary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledPrimaryButton<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnPrimaryButton<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledPrimarySlider<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">primaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onPrimaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledSecondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnSecondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledSecondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnSecondaryVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSecondaryContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">tertiaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onTertiaryContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">tertiaryContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">background<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onBackgroundVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceVariantDialog<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceVariantSummary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceVariantActions<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">disabledOnSurface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">outline<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">dividerLine<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainerVariant<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceContainerHigh<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainerHigh<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceContainerHighest<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">onSurfaceContainerHighest<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter ">windowDimming<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="642381830%2FProperties%2F1642444840" anchor-label="background" id="642381830%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="background.html"><span><span>background</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="642381830%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="background.html">background</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-797260801%2FProperties%2F1642444840" anchor-label="disabledOnPrimary" id="-797260801%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-on-primary.html"><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Primary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-797260801%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-on-primary.html">disabledOnPrimary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1537280147%2FProperties%2F1642444840" anchor-label="disabledOnPrimaryButton" id="-1537280147%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-on-primary-button.html"><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1537280147%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-on-primary-button.html">disabledOnPrimaryButton</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1729244211%2FProperties%2F1642444840" anchor-label="disabledOnSecondary" id="-1729244211%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-on-secondary.html"><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Secondary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1729244211%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-on-secondary.html">disabledOnSecondary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2115200232%2FProperties%2F1642444840" anchor-label="disabledOnSecondaryVariant" id="2115200232%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-on-secondary-variant.html"><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2115200232%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-on-secondary-variant.html">disabledOnSecondaryVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="200158132%2FProperties%2F1642444840" anchor-label="disabledOnSurface" id="200158132%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-on-surface.html"><span>disabled</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Surface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="200158132%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-on-surface.html">disabledOnSurface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-197612736%2FProperties%2F1642444840" anchor-label="disabledPrimary" id="-197612736%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-primary.html"><span>disabled</span><wbr></wbr><span><span>Primary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-197612736%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-primary.html">disabledPrimary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1950919150%2FProperties%2F1642444840" anchor-label="disabledPrimaryButton" id="1950919150%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-primary-button.html"><span>disabled</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1950919150%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-primary-button.html">disabledPrimaryButton</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-932754657%2FProperties%2F1642444840" anchor-label="disabledPrimarySlider" id="-932754657%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-primary-slider.html"><span>disabled</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Slider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-932754657%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-primary-slider.html">disabledPrimarySlider</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-993071410%2FProperties%2F1642444840" anchor-label="disabledSecondary" id="-993071410%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-secondary.html"><span>disabled</span><wbr></wbr><span><span>Secondary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-993071410%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-secondary.html">disabledSecondary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1968236857%2FProperties%2F1642444840" anchor-label="disabledSecondaryVariant" id="-1968236857%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disabled-secondary-variant.html"><span>disabled</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1968236857%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="disabled-secondary-variant.html">disabledSecondaryVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-666162471%2FProperties%2F1642444840" anchor-label="dividerLine" id="-666162471%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="divider-line.html"><span>divider</span><wbr></wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-666162471%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="divider-line.html">dividerLine</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="998333415%2FProperties%2F1642444840" anchor-label="onBackground" id="998333415%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-background.html"><span>on</span><wbr></wbr><span><span>Background</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="998333415%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-background.html">onBackground</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1932170354%2FProperties%2F1642444840" anchor-label="onBackgroundVariant" id="-1932170354%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-background-variant.html"><span>on</span><wbr></wbr><span>Background</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1932170354%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-background-variant.html">onBackgroundVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-951048861%2FProperties%2F1642444840" anchor-label="onPrimary" id="-951048861%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-primary.html"><span>on</span><wbr></wbr><span><span>Primary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-951048861%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-primary.html">onPrimary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1210699882%2FProperties%2F1642444840" anchor-label="onPrimaryContainer" id="-1210699882%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-primary-container.html"><span>on</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1210699882%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-primary-container.html">onPrimaryContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-627818862%2FProperties%2F1642444840" anchor-label="onPrimaryVariant" id="-627818862%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-primary-variant.html"><span>on</span><wbr></wbr><span>Primary</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-627818862%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-primary-variant.html">onPrimaryVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="804285489%2FProperties%2F1642444840" anchor-label="onSecondary" id="804285489%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-secondary.html"><span>on</span><wbr></wbr><span><span>Secondary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="804285489%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-secondary.html">onSecondary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1422020472%2FProperties%2F1642444840" anchor-label="onSecondaryContainer" id="-1422020472%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-secondary-container.html"><span>on</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1422020472%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-secondary-container.html">onSecondaryContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1760546765%2FProperties%2F1642444840" anchor-label="onSecondaryContainerVariant" id="1760546765%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-secondary-container-variant.html"><span>on</span><wbr></wbr><span>Secondary</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1760546765%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-secondary-container-variant.html">onSecondaryContainerVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1486138364%2FProperties%2F1642444840" anchor-label="onSecondaryVariant" id="-1486138364%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-secondary-variant.html"><span>on</span><wbr></wbr><span>Secondary</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1486138364%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-secondary-variant.html">onSecondaryVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="46370072%2FProperties%2F1642444840" anchor-label="onSurface" id="46370072%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface.html"><span>on</span><wbr></wbr><span><span>Surface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="46370072%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface.html">onSurface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-231496831%2FProperties%2F1642444840" anchor-label="onSurfaceContainer" id="-231496831%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-container.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-231496831%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-container.html">onSurfaceContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1795035649%2FProperties%2F1642444840" anchor-label="onSurfaceContainerHigh" id="-1795035649%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-container-high.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>High</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1795035649%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-container-high.html">onSurfaceContainerHigh</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="545993589%2FProperties%2F1642444840" anchor-label="onSurfaceContainerHighest" id="545993589%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-container-highest.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Highest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="545993589%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-container-highest.html">onSurfaceContainerHighest</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="986333876%2FProperties%2F1642444840" anchor-label="onSurfaceContainerVariant" id="986333876%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-container-variant.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="986333876%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-container-variant.html">onSurfaceContainerVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="292112384%2FProperties%2F1642444840" anchor-label="onSurfaceVariantActions" id="292112384%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-variant-actions.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Variant</span><wbr></wbr><span><span>Actions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="292112384%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-variant-actions.html">onSurfaceVariantActions</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1294562091%2FProperties%2F1642444840" anchor-label="onSurfaceVariantDialog" id="-1294562091%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-variant-dialog.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Variant</span><wbr></wbr><span><span>Dialog</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1294562091%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-variant-dialog.html">onSurfaceVariantDialog</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2103408265%2FProperties%2F1642444840" anchor-label="onSurfaceVariantSummary" id="-2103408265%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-variant-summary.html"><span>on</span><wbr></wbr><span>Surface</span><wbr></wbr><span>Variant</span><wbr></wbr><span><span>Summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2103408265%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-surface-variant-summary.html">onSurfaceVariantSummary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2050240950%2FProperties%2F1642444840" anchor-label="onTertiaryContainer" id="2050240950%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-tertiary-container.html"><span>on</span><wbr></wbr><span>Tertiary</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2050240950%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="on-tertiary-container.html">onTertiaryContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1813109916%2FProperties%2F1642444840" anchor-label="outline" id="-1813109916%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="outline.html"><span><span>outline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1813109916%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="outline.html">outline</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2097211996%2FProperties%2F1642444840" anchor-label="primary" id="-2097211996%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="primary.html"><span><span>primary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2097211996%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="primary.html">primary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="547027061%2FProperties%2F1642444840" anchor-label="primaryContainer" id="547027061%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="primary-container.html"><span>primary</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="547027061%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="primary-container.html">primaryContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1184648399%2FProperties%2F1642444840" anchor-label="primaryVariant" id="-1184648399%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="primary-variant.html"><span>primary</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1184648399%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="primary-variant.html">primaryVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1146859470%2FProperties%2F1642444840" anchor-label="secondary" id="-1146859470%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="secondary.html"><span><span>secondary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1146859470%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="secondary.html">secondary</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-168575577%2FProperties%2F1642444840" anchor-label="secondaryContainer" id="-168575577%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="secondary-container.html"><span>secondary</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-168575577%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="secondary-container.html">secondaryContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-922381874%2FProperties%2F1642444840" anchor-label="secondaryContainerVariant" id="-922381874%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="secondary-container-variant.html"><span>secondary</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-922381874%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="secondary-container-variant.html">secondaryContainerVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="271588579%2FProperties%2F1642444840" anchor-label="secondaryVariant" id="271588579%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="secondary-variant.html"><span>secondary</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="271588579%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="secondary-variant.html">secondaryVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1099793063%2FProperties%2F1642444840" anchor-label="surface" id="-1099793063%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="surface.html"><span><span>surface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1099793063%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="surface.html">surface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1526230112%2FProperties%2F1642444840" anchor-label="surfaceContainer" id="1526230112%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="surface-container.html"><span>surface</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1526230112%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="surface-container.html">surfaceContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="174665566%2FProperties%2F1642444840" anchor-label="surfaceContainerHigh" id="174665566%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="surface-container-high.html"><span>surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>High</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="174665566%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="surface-container-high.html">surfaceContainerHigh</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2071691702%2FProperties%2F1642444840" anchor-label="surfaceContainerHighest" id="2071691702%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="surface-container-highest.html"><span>surface</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Highest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2071691702%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="surface-container-highest.html">surfaceContainerHighest</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1372792284%2FProperties%2F1642444840" anchor-label="surfaceVariant" id="1372792284%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="surface-variant.html"><span>surface</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1372792284%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="surface-variant.html">surfaceVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="705201335%2FProperties%2F1642444840" anchor-label="tertiaryContainer" id="705201335%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tertiary-container.html"><span>tertiary</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="705201335%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="tertiary-container.html">tertiaryContainer</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="509982910%2FProperties%2F1642444840" anchor-label="tertiaryContainerVariant" id="509982910%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tertiary-container-variant.html"><span>tertiary</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="509982910%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="tertiary-container-variant.html">tertiaryContainerVariant</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-107325319%2FProperties%2F1642444840" anchor-label="windowDimming" id="-107325319%2FProperties%2F1642444840" data-filterable-set=":miuix:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":miuix:dokkaHtml/commonMain" data-filterable-set=":miuix:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="window-dimming.html"><span>window</span><wbr></wbr><span><span>Dimming</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-107325319%2FProperties%2F1642444840"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":miuix:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="window-dimming.html">windowDimming</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
